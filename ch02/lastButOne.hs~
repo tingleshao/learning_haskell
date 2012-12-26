@@ -1,0 +1,9 @@
+-- file: ch02/lastButOne.hs
+lastButOne lst = if null lst
+	         then []
+                 else if null (tail lst)
+                      then []
+                      else if null (tail (tail lst))
+                           then head lst
+                           else lastButOne (tail lst)
+                
