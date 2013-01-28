@@ -11,3 +11,5 @@ safeHead = safeListFunc head
 safeTail = safeListFunc tail
 safeLast = safeListFunc last
 safeInit = safeListFunc init
+
+splitWith :: (a -> Bool) -> [a] -> [[a]]
